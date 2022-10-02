@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
 function AlbumView() {
@@ -14,3 +15,4 @@ function AlbumView() {
 
 
 export default AlbumView
+

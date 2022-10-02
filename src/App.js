@@ -39,10 +39,10 @@ function App() {
           <Router>
               <Routes>
                   <Route path="/" element={
-                      <Fragment>
+                      <Route>
                           <SearchBar handleSearch = {handleSearch}/>
                           <Gallery data={data} />
-                      </Fragment>
+                      </Route>
                   } />
                   <Route path="/album/:id" element={<AlbumView />} />
                   <Route path="/artist/:id" element={<ArtistView />} />

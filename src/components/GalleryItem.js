@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-function GalleryItem(props){
+function GalleryItem(){
     let [view, setView] = useState(false)
 
     return (
@@ -12,7 +12,7 @@ function GalleryItem(props){
 }
 
 
-const detailView = () => {
+const detailView = (props) => {
     return (
         <div style={detailStyle}>
             <h2>{props.item.trackName}</h2>
